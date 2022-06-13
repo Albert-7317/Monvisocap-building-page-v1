@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="monviso.css">
+    <title>Monvisocap.com</title>
+    <div class="header">
+        <a>
+            company name and such goes here, will also ad company logo here
+        </a>
+        <div class="navigation_row">
+            <div class="navigation_col">
+                <button class="button" onclick=home()>Home</button>
+                <button class="button" onclick=goTo(about)>About Us</button>
+                <button class="button" onclick=goTo(contact)>Contact Us</button>
+            </div>
+        </div>
+    </div>
+
+</head>
+<body>
+    <div class="all_browser">
+        <div class="placeholder">
+        </div>
+        <div class="info_row">
+            <div class="info_col">
+                <div class="about-us">
+                    <p id="about">
+                        this is were the paragraph about the company. A general about page
+                    </p>
+                </div>
+                <div class="image">
+                    <center>
+                        <img src="monviso-mountain.jpg">
+                    </center>
+                </div>
+                <div class="contact-us">
+                    <p id="contact">
+                        this is were the paragraph about contacting the company will go
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function home(){
+            window.scrollTo(10, 10);
+        }
+
+        function goTo(ID){
+            const element = document.getElementById(ID);
+            console.log('fuck you')
+            element.scrollIntoView();
+        }
+    </script>
+</body>
+<footer> 
+    <a>
+        Company info: Names and such go here
+    </a>
+    <a href="example@example.com"> 
+        This is were emali adress and other linked objects go
+    </a>
+</footer>
+</html>

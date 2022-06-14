@@ -8,13 +8,13 @@
     <title>Monvisocap.com</title>
     <div class="header">
         <a>
-            company name and such goes here, will also ad company logo here
+            Monvisocap
         </a>
         <div class="navigation_row">
             <div class="navigation_col">
                 <button class="button" onclick=home()>Home</button>
-                <button class="button" onclick=goTo(about)>About Us</button>
-                <button class="button" onclick=goTo(contact)>Contact Us</button>
+                <button class="button" onclick=goToAbout()>About Us</button>
+                <button class="button" onclick=goToContact()>Contact Us</button>
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@
             <div class="info_col">
                 <div class="about-us">
                     <p id="about">
-                        this is were the paragraph about the company. A general about page
+                        SAMPLE TEXT NOT REAL. Our company is all about excellence and pther important things. We strive to have lots of important things, one might even say sall the important things. Yes, I think thats  good goal for our company. How do we achive that goal. We run a series of pool shark scams across multiple pubs in the UK and Northern Irland.
                     </p>
                 </div>
                 <div class="image">
@@ -38,7 +38,7 @@
                 </div>
                 <div class="contact-us">
                     <p id="contact">
-                        this is were the paragraph about contacting the company will go
+                        SAMPLE TEXT NOT REAL. To contatct us I would hve to say your best bet if most likley a large smoke signal. When guarding our patch we send out 10 trained men and 15 untrained men. The untrained ones will seee the smoke signal and send the trained men to contact you. If you dont like that then to bad we spent our budget on training 10 men.
                     </p>
                 </div>
             </div>
@@ -50,19 +50,21 @@
             window.scrollTo(10, 10);
         }
 
-        function goTo(ID){
-            const element = document.getElementById(ID);
-            console.log('fuck you')
-            element.scrollIntoView();
+        function goToContact(){
+           document.getElementById('contact').scrollIntoView();
+        }
+
+        function goToAbout() {
+            document.getElementById('about').scrollIntoView();
         }
     </script>
 </body>
 <footer> 
     <a>
-        Company info: Names and such go here
+        Business number -> 12345 (not sure what other company info needs to be here be here it can go)
     </a>
     <a href="example@example.com"> 
-        This is were emali adress and other linked objects go
+        example@example.co.uk
     </a>
 </footer>
 </html>
